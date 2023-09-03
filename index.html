@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Запомни картинки. Страничка для развития памяти.">
+  <meta name="keywords" content="игра,запомни,картинки">
+  <link rel="icon" href="./images/звезда.png" type="image/x-icon">
+  <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+  <title>Игра-Запомни картинки</title>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NXL7VF7');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments)};
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(82232968, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+
+  <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXL7VF7" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="mui-appbar">
+    <div class="mui-container">
+      <table width="100%">
+        <tr style="vertical-align:middle;">
+          <td class="mui--appbar-height">ЗАПОМНИ КАРТИНКИ</td>
+          <td class="mui--appbar-height" align="right">
+            <div class="mui-dropdown">
+              <button id="setImg" class="mui-btn mui-btn--raised mui-btn--primary" data-mui-toggle="dropdown">
+                ВЫБОР КАРТИНОК
+                <span class="mui-caret"></span>
+              </button>
+              <ul class="list-button mui-dropdown__menu mui-dropdown__menu--right">
+                <li><a id="12" href="#">12 КАРТИНОК</a></li>
+                <li><a id="18" href="#">18 КАРТИНОК</a></li>
+                <li><a id="24" href="#">24 КАРТИНОК</a></li>
+                <li><a id="36" href="#">36 КАРТИНОК</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </header>
+  <main>
+    <div class="content" id="content-wrapper">
+      <div class="mui-container mui-panel container-info">
+        <table width="100%">
+          <tr style="vertical-align:middle;">
+            <td class="mui--appbar-height">ВЫБЕРИ КОЛИЧЕСТВО ИЗОБРАЖЕНИЙ ЗАПОМНИ ИХ И НАЖМИ СТАРТ</td>
+            <td class="mui--appbar-height" align="right">
+              <button id="start" class="mui-btn mui-btn--raised mui-btn--primary">
+                СТАРТ
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="mui-container">
+        <div class="list-img mui-row" id="add-div-images">
+
+        </div>
+      </div>
+      <div class="mui-container mui-panel container-info container-result">
+        <table width="100%">
+          <tr style="vertical-align:middle;">
+            <td class="mui--appbar-height">ОТКРЫВ ИЗОБРАЖЕНИЯ НАЖИМАЙ РЕЗУЛЬТАТ И ПОЛУЧАЙ ЗВЁЗДОЧКИ</td>
+            <td class="mui--appbar-height" align="right">
+              <button id="result" class="mui-btn mui-btn--raised mui-btn--primary">
+                РЕЗУЛЬТАТ
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+  </main>
+  <footer>
+
+    <div class="mui-container mui--text-center">
+      Images: <a href="https://icons8.com/">icons8.com</a><br>
+      Made with ♥ by <a href="https://www.muicss.com">MUICSS</a><br>
+      © 2023 Copyright: Паницин Михаил
+    </div>
+  </footer>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/82232968" style="position:absolute; left:-9999px;" alt="" />
+    </div>
+  </noscript>
+</body>
+
+</html>
